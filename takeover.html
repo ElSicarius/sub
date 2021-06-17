@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <title>Subdomain Takeover</title>
+  </head>
+   <body>
+  <style> @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+  .wrapper {
+      display: flex;
+      width: 100%;
+      align-items: stretch;
+  }
+
+  #sidebar {
+      min-width: 250px;
+      max-width: 250px;
+  }
+
+  #sidebar.active {
+      margin-left: -250px;
+  }
+  #sidebar {
+      min-width: 250px;
+      max-width: 250px;
+      min-height: 100vh;
+  }
+  a[data-toggle="collapse"] {
+      position: relative;
+  }
+
+  .dropdown-toggle::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+  }
+  @media (max-width: 768px) {
+      #sidebar {
+          margin-left: -250px;
+      }
+      #sidebar.active {
+          margin-left: 0;
+      }
+  }
+
+
+
+  body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+  }
+
+  p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1em;
+      font-weight: 300;
+      line-height: 1.7em;
+      color: #999;
+  }
+
+  a, a:hover, a:focus {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
+  }
+
+  #sidebar {
+      background: #121c43;
+      color: #fff;
+      transition: all 0.3s;
+  }
+
+  #sidebar .sidebar-header {
+      padding: 20px;
+      background: #305c9e;
+  }
+
+  #sidebar ul.components {
+      padding: 20px 0;
+      border-bottom: 2px solid #21323b;
+  }
+
+  #sidebar ul p {
+      color: #fff;
+      padding: 10px;
+  }
+
+  #sidebar ul li a {
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+  }
+  #sidebar ul li a:hover {
+      color: #7386D5;
+      background: #fff;
+  }
+
+  #sidebar ul li.active > a, a[aria-expanded="true"] {
+      color: #fff;
+      background: #162b4b;
+  }
+  ul ul a {
+      font-size: 0.9em !important;
+      padding-left: 30px !important;
+      background: #6d7fcc;
+  } </style>
+  <div class="wrapper">
+      <nav id='sidebar'>
+          <div class="sidebar-header">
+            <h4> Contact me </h4>
+            <h6> Or follow me :D </h6>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p></p>
+            <li class="active">
+                <a href="https://hackerone.com/sicarius" >Hackerone</a>
+            </li>
+            <li class="active">
+                <a href="https://twitter.com/AMTraaaxX" >Twitter</a>
+            </li>
+            <li class="active">
+                <a href="https://elsicarius.fr" >Personnal Blog</a>
+            </li>
+
+        </ul>
+      </nav>
+
+      <div id="mainpage" class="container-fluid mb-3">
+
+          <div class="container mb-3">
+              <span class="h3"> Subdomain Takeover </span>
+              <p class="text-dark"> Hi, sorry for the inconvenience, this subdomain as been taken over by <b>Sicarius</b> for a PoC of a vulnerability.</br></br>
+
+              Have a nice day :D </p>
+
+
+          </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </body>
+</html>
